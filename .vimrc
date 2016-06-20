@@ -2,6 +2,10 @@
 " Lauren Caliolio 4/14/2015
 " Links: http://dougblack.io/words/a-good-vimrc.html
 
+" Enabling pathogen for vim plugin mgmt
+call pathogen#infect()
+call pathogen#helptags()
+
 " Enable syntax
 syntax enable
 
@@ -32,3 +36,9 @@ set incsearch
 " Set background theme to dark 
 " So that I can see the colors against a black screen
 set background=dark
+
+" Set auto indentation
+set ai
+
+" Set comments so that * + [spacebar] will automatically appear 
+set com=fb:*

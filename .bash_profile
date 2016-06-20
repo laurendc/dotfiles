@@ -113,3 +113,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# adding to PATH for i3
+export PATH="/opt/cxoffice/bin:$PATH"
