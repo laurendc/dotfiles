@@ -3,7 +3,7 @@
 # ./makesymlinks.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 # Modified from this dude: https://github.com/michaeljsmalley/dotfiles
-# to use it: update files variable with the dotfiles you want to sync.
+# to use it: update $files variable with the dotfiles you want to sync.
 # If you are just forking mine, don't do anything outside of running ./makesymlinks.sh
 ############################
 
@@ -15,7 +15,7 @@ files="bash_profile profile bashrc vimrc vim"    # list of files/folders to syml
 
 ##########
 
-# create dot"files_old in homedir
+# create dotfiles_old in homedir
 if [ -d $olddir ];
 then 
     echo -n "Directory already exists, moving on"
@@ -30,7 +30,8 @@ echo -n "Changing to the $dir directory"
 cd $dir
 echo "done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+# move any existing dotfiles in home to dotfiles_old directory
+# then create symlinks from home to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/.${file} ~/dotfiles_old/
