@@ -116,3 +116,6 @@ fi
 
 #set PATH for i3
 export PATH="/opt/cxoffice/bin:$PATH" 
+
+#for screen vim in fedora :-(
+export TERM=xterm
