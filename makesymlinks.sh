@@ -17,16 +17,21 @@ files="bash_profile profile bashrc vimrc vim"    # list of files/folders to syml
 
 # create dotfiles_old in homedir
 if [ -d $olddir ];
-then 
+then
+    echo ""
     echo -n "Directory already exists, moving on"
+    echo ""
 else
     echo -n "Creating $olddir for backup of any existing dotfiles in ~ "
     mkdir -p $olddir
+    echo ""
     echo -n "done"
+    echo ""
 fi
 
 # change to the dotfiles directory
 echo -n "Changing to the $dir directory"
+echo ""
 cd $dir
 echo "done"
 
