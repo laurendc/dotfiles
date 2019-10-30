@@ -119,3 +119,7 @@ export PATH="/opt/cxoffice/bin:$PATH"
 
 #for screen vim in fedora :-(
 export TERM=xterm
+
+# for dir colors
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
