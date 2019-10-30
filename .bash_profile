@@ -116,3 +116,7 @@ fi
 
 # adding to PATH for i3
 export PATH="/opt/cxoffice/bin:$PATH"
+
+# add dir colors
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
