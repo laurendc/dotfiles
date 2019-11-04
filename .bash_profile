@@ -122,5 +122,5 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 if [ -x /usr/local/bin/cowsay -a -x /usr/local/bin/fortune ]; then
-    fortune | cowsay
+    fortune -s | cowsay | lolcat
 fi
